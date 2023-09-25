@@ -1,0 +1,21 @@
+.vmIcon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.vmIcon_gray {
+  fill: $color-gray-1;
+}
+
+.vmIcon_black {
+  fill: $color-base-black;
+}
+
+.vmIcon_primary {
+  fill: $color-brand-main;
+}
+
+.vmIcon_seltTop {
+  align-self: flex-start;
+}

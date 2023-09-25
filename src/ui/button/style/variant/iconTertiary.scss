@@ -1,0 +1,34 @@
+.vmButton_icon_tertiary {
+  color: $color-gray-1;
+  background-color: transparent;
+
+  padding: 12px;
+
+  & * {
+    fill: $color-gray-1;
+
+    transition: fill $transition-2;
+  }
+
+  &:hover {
+    color: $color-brand-main;
+
+    & * {
+      fill: $color-brand-main;
+    }
+  }
+
+  &:disabled {
+    color: $color-gray-3;
+
+    & * {
+      fill: $color-gray-3;
+    }
+  }
+}
+
+// Svg
+.vmButton_icon_tertiary > svg {
+  width: 24px;
+  height: 24px;
+}

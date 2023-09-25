@@ -1,0 +1,145 @@
+.vmModal {
+  background-color: rgba(15, 15, 20, 0.4);
+
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1011;
+
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  transition: opacity 0.2s ease-in;
+
+  pointer-events: none;
+
+  // vmModal__dialog
+  &__dialog {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: auto;
+    max-width: 720px;
+    min-height: calc(100% - 40px * 2);
+
+    margin: 40px auto;
+
+    @media (max-width: $media-max-768) {
+      margin: 40px 16px;
+    }
+  }
+
+  // vmModal__content
+  &__content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    color: $color-base-black;
+    background-color: $color-base-white;
+
+    border: none;
+    border-radius: 12px;
+
+    z-index: 1012;
+
+    // vmModal__content_closeButton
+    &_closeButton {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+
+      & * {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    // vmModal__content_title
+    &_title {
+      padding: 32px 32px 0 32px;
+
+      margin: 0 0 16px 0;
+
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+
+      color: $color-base-black;
+
+      @media (max-width: $media-max-768) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+
+    // vmModal__content_body
+    &_body {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      line-height: 24px;
+
+      color: $color-gray-1;
+
+      padding: 0 32px;
+
+      margin: 0 0 32px 0;
+
+      pointer-events: all;
+
+      z-index: 1012;
+    }
+
+    // vmModal__content_footer
+    &_footer {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      @media (max-width: $media-max-768) {
+        flex-direction: column;
+      }
+
+      // vmModal__content_footer > button
+      button {
+        width: 50%;
+
+        @media (max-width: $media-max-768) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // vmModal show
+  &.show {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+//
+.vmModal__content_footer__onlyClose {
+  button {
+    width: 100%;
+  }
+}
+
+.vmModal__footer_end {
+  justify-content: flex-end;
+}

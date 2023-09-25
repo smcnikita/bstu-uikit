@@ -1,0 +1,22 @@
+// Message
+.vmInput__message {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+
+  color: $color-gray-1;
+
+  margin-top: 8px;
+
+  // vmInput__message_error
+  &_error {
+    color: $color-system-error-2;
+  }
+}

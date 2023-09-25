@@ -1,0 +1,26 @@
+.vmContainer_content {
+  max-width: 3840px;
+  margin: 0 auto;
+}
+
+.vmContainer,
+.vmContainer_header {
+  max-width: calc(1216px + 32px + 32px);
+  margin: 0 auto;
+  padding: 0 32px;
+
+  @media screen and (max-width: 1279.98px) {
+    max-width: calc(944px + 40px + 40px);
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    max-width: calc(688px + 40px + 40px);
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 479.98px) {
+    max-width: calc(448px + 16px + 16px);
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,8 @@
+.vmAlert_success {
+  color: $color-system-success-1;
+  background-color: $color-system-success-3;
+
+  &_icon {
+    fill: $color-system-success-1;
+  }
+}

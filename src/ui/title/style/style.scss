@@ -1,0 +1,57 @@
+// -----
+// Заголовки (h1, h2, h3)
+// -----
+
+// Общие стили, приминяемые ко всем заголовкам
+.vmTitle_1,
+.vmTitle_2,
+.vmTitle_3 {
+  font-weight: 600;
+  color: $color-base-black;
+  margin: 0;
+}
+
+// Заголовок h1
+.vmTitle_1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+
+  @media (max-width: $media-max-768) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+// Заголовок h2
+.vmTitle_2 {
+  font-size: 32px;
+  line-height: 40px;
+
+  @media (max-width: $media-max-768) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+// Заголовок h3
+.vmTitle_3 {
+  font-size: 24px;
+  line-height: 32px;
+
+  @media (max-width: $media-max-768) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+// Дополнительный заголовок, обычно 4 уровня (h4)
+.vmTitle_4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+
+  color: $color-gray-1;
+}

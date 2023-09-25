@@ -1,0 +1,47 @@
+.vmProgressBar__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.vmProgressBar__label {
+  display: inline-block;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: $color-base-black;
+
+  margin-bottom: 8px;
+}
+
+.vmProgressBar__line {
+  position: absolute;
+  top: 0;
+
+  border-radius: 2px;
+
+  height: 4px;
+}
+
+.vmProgressBar__line_notActive {
+  background-color: $color-gray-4;
+  left: 0;
+  right: 0;
+}
+
+.vmProgressBar__line_active {
+  background-color: $color-brand-main;
+  z-index: 1;
+}
+
+.vmProgressBar__description {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $color-gray-1;
+
+  margin-top: 8px;
+}

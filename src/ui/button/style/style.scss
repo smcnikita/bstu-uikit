@@ -1,0 +1,42 @@
+.vmButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  border: none;
+  border-radius: 4px;
+
+  padding: 11px 24px;
+
+  cursor: pointer;
+
+  transition:
+    color $transition-2,
+    background-color $transition-2,
+    border $transition-2;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-brand-2;
+  }
+
+  // spinner
+  & > .vmButton_spinner {
+    width: 24px;
+    height: 24px;
+    stroke: $color-gray-3;
+  }
+}
+
+.vmButton_icon {
+  padding: 12px;
+}

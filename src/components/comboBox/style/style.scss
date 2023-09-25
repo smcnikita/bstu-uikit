@@ -1,0 +1,150 @@
+.vmComboBox {
+  position: relative;
+
+  width: 100%;
+}
+
+.vmComboBox__btn {
+  position: absolute;
+  right: 8px;
+  top: 45%;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  padding: 8px;
+
+  border: none;
+  border-radius: 4px;
+
+  &:focus-visible {
+    outline: 2px solid $color-brand-2;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    & > .vmComboBox__btn_icon {
+      display: none;
+    }
+  }
+}
+
+.vmComboBox__btn_icon {
+  width: 24px;
+  height: 24px;
+  fill: $color-base-black;
+
+  transition: transform $transition-2;
+}
+
+.vmComboBox__loading {
+  position: absolute;
+  right: 8px;
+  top: 77%;
+  transform: translate(-8px, -77%);
+  width: 24px;
+  height: 24px;
+  stroke: $color-gray-3;
+}
+
+.vmComboBox__input {
+  display: block;
+
+  width: 100%;
+
+  padding: 11px 56px 11px 12px;
+}
+
+.vmComboBox__dropdown {
+  z-index: 2;
+
+  position: absolute;
+
+  visibility: hidden;
+  opacity: 0;
+
+  width: 100%;
+  max-height: 196px;
+
+  background-color: #fff;
+
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  transition: opacity $transition-3;
+}
+
+.vmComboBox__dropdown_list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  margin: 0;
+  padding: 12px;
+
+  list-style: none;
+
+  &:focus-visible {
+    outline: 2px solid $color-brand-2;
+  }
+}
+
+// Item
+.vmComboBox__item {
+  display: block;
+
+  width: 100%;
+
+  text-align: start;
+
+  color: $color-base-black;
+  background-color: $color-base-white;
+
+  padding: 8px 12px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+
+  transition:
+    color $transition-2,
+    background-color $transition-2;
+
+  &:hover {
+    background-color: $color-gray-4;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-brand-2;
+  }
+
+  &_selected {
+    color: $color-base-white;
+    background-color: $color-brand-main;
+
+    &:hover {
+      background-color: $color-brand-1;
+    }
+  }
+}
+
+// Open
+.vmComboBox.open .vmComboBox__dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.vmComboBox.open .vmComboBox__btn_icon {
+  transform: rotate(180deg);
+}

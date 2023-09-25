@@ -1,0 +1,17 @@
+.vmButton_primary {
+  color: $color-base-white;
+  background-color: $color-brand-main;
+
+  border: 1px solid $color-brand-main;
+
+  &:hover {
+    background-color: $color-brand-1;
+    border: 1px solid $color-brand-1;
+  }
+
+  &:disabled {
+    background-color: $color-gray-4;
+    color: $color-gray-3;
+    border: 1px solid $color-gray-4;
+  }
+}

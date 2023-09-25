@@ -1,0 +1,13 @@
+// Base
+@import './style.scss';
+
+// Variants
+@import './variant/index.scss';
+
+// Sizes
+@import './size/index.scss';
+
+// Accessibility Theme Contrast
+.accessibility__theme_contrast {
+  @import './accessibility/contrast/index.scss';
+}

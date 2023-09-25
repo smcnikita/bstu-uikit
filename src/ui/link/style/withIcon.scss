@@ -1,0 +1,10 @@
+// Ссылка с иконкой
+.vmLink_withIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  & > svg {
+    flex-shrink: 0;
+  }
+}

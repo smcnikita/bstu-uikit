@@ -1,0 +1,54 @@
+.vmFileList {
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+  color: $color-base-black;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    &_invalid {
+      color: $color-system-error-2;
+      .vmFileList__icon {
+        fill: currentColor;
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    min-width: 24px;
+    height: 24px;
+    fill: $color-gray-1;
+  }
+
+  &__deleteButton {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover .vmFileList__buttonIcon {
+      fill: $color-brand-main;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-brand-2;
+    }
+  }
+
+  &__buttonIcon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: $color-gray-1;
+    transition: fill $transition-3;
+  }
+}

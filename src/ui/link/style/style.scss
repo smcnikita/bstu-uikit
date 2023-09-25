@@ -1,0 +1,14 @@
+.vmLink {
+  text-decoration: none;
+
+  border-radius: 3px;
+
+  transition: color $transition-2;
+}
+
+// Focus
+.vmLink:focus-visible {
+  outline: 2px solid $color-brand-2;
+}
+
+// @import './accessibility/contrast';

@@ -1,0 +1,79 @@
+// Base
+$color-base-black: #010d19;
+$color-base-grey: #f8f9fa;
+$color-base-white: #ffffff;
+
+// Brand
+$color-brand-main: #004c97;
+$color-brand-1: #0c70d6;
+$color-brand-2: #78b8f8;
+$color-brand-3: #ddedfd;
+
+// Gray
+$color-gray-1: #6b8299;
+$color-gray-2: #b5c1cc;
+$color-gray-3: #e1e6eb;
+$color-gray-4: #f0f3f5;
+
+// System error
+$color-system-error-1: #d82e2e;
+$color-system-error-2: #ff564e;
+$color-system-error-3: #ffeae9;
+
+// System warning
+$color-system-warning-1: #cd8703;
+$color-system-warning-2: #f7b73f;
+$color-system-warning-3: #fef6e7;
+
+// System success
+$color-system-success-1: #228b45;
+$color-system-success-2: #28c75d;
+$color-system-success-3: #e3f9ea;
+
+// Additional
+$color-add-1: #0c2340;
+$color-add-2: #18589e;
+$color-add-3: #0077c8;
+$color-add-4: #626262;
+$color-add-5: #c8c8c8;
+
+:root {
+  // Base
+  --vmColor-base-black: #{$color-base-black};
+  --vmColor-base-gray: #{$color-base-grey};
+  --vmColor-base-white: #{$color-base-white};
+
+  // Brand
+  --vmColor-brand-main: #{$color-brand-main};
+  --vmColor-brand-1: #{$color-brand-1};
+  --vmColor-brand-2: #{$color-brand-2};
+  --vmColor-brand-3: #{$color-brand-3};
+
+  // Gray
+  --vmColor-gray-1: #{$color-gray-1};
+  --vmColor-gray-2: #{$color-gray-2};
+  --vmColor-gray-3: #{$color-gray-3};
+  --vmColor-gray-4: #{$color-gray-4};
+
+  // System error
+  --vmColor-system-error-1: #{$color-system-error-1};
+  --vmColor-system-error-2: #{$color-system-error-2};
+  --vmColor-system-error-3: #{$color-system-error-3};
+
+  // System warning
+  --vmColor-system-warning-1: #{$color-system-warning-1};
+  --vmColor-system-warning-2: #{$color-system-warning-2};
+  --vmColor-system-warning-3: #{$color-system-warning-3};
+
+  // System success
+  --vmColor-system-success-1: #{$color-system-success-1};
+  --vmColor-system-success-2: #{$color-system-success-2};
+  --vmColor-system-success-3: #{$color-system-success-3};
+
+  // Additional
+  --vmColor-add-1: #{$color-add-1};
+  --vmColor-add-2: #{$color-add-2};
+  --vmColor-add-3: #{$color-add-3};
+  --vmColor-add-4: #{$color-add-4};
+  --vmColor-add-5: #{$color-add-5};
+}

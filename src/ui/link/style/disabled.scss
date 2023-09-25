@@ -1,0 +1,9 @@
+.vmLink_disabled,
+.vmLink.disabled {
+  color: $color-gray-3;
+  cursor: not-allowed;
+}
+
+.vmLink_disabled:hover {
+  color: $color-gray-3;
+}

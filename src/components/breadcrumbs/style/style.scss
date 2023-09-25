@@ -1,0 +1,88 @@
+.vmBreadcrumbs {
+  font-size: 14px;
+
+  padding: 24px 0;
+
+  @media (max-width: $media-max-768) {
+    display: none;
+  }
+}
+
+.vmBreadcrumbs a {
+  color: gray;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: color linear 0.2s;
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.vmBreadcrumbs a:hover {
+  color: $color-brand-main;
+}
+
+.vmBreadcrumbs a.active,
+.vmBreadcrumbs a:last-child {
+  color: $color-base-black;
+  pointer-events: none;
+}
+
+.vmBreadcrumbs .vmBreadcrumbs__item_default {
+  color: $color-gray-2;
+  pointer-events: none;
+}
+
+.vmBreadcrumbs a:focus-visible {
+  outline: 2px solid $color-brand-2;
+}
+
+.vmBreadcrumbs *:not(:first-child) {
+  padding-right: 8px;
+  padding-left: 32px;
+}
+
+.vmBreadcrumbs *:first-child {
+  margin-right: 8px;
+}
+
+.vmBreadcrumbs *:not(:first-child)::before {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.707 17.707L16.414 12L10.707 6.293L9.29303 7.707L13.586 12L9.29303 16.293L10.707 17.707Z' fill='%2385909E'/%3E%3C/svg%3E%0A");
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  position: absolute;
+}
+
+.vmBreadcrumbs a {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $color-gray-1;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  transition: color $transition-2;
+
+  &:hover {
+    color: $color-brand-main;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-brand-2;
+  }
+
+  &.active {
+    color: $color-base-black;
+
+    cursor: default;
+  }
+}

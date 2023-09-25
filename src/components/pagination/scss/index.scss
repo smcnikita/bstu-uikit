@@ -1,0 +1,64 @@
+.vmPagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.vmPagination__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  width: 40px;
+  height: 40px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $color-brand-main;
+  background-color: $color-base-white;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: background-color $transition-2;
+
+  &:hover {
+    background-color: $color-brand-3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-brand-2;
+  }
+
+  &.selected {
+    color: $color-base-white;
+    background-color: $color-brand-main;
+  }
+
+  &.next {
+    width: auto;
+    height: auto;
+  }
+}
+
+.vmPagination__button_icon {
+  width: 24px;
+  height: 24px;
+  fill: $color-gray-1;
+}
+
+.vmPagination__button.support {
+  color: $color-gray-1;
+}
+
+.vmPagination__button.support:hover {
+  background-color: $color-base-white;
+  cursor: default;
+}

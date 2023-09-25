@@ -1,0 +1,287 @@
+.vmSelect {
+  position: relative;
+
+  width: 100%;
+}
+
+// input
+.vmSelect__input {
+  cursor: pointer;
+
+  padding: 11px 56px 11px 12px;
+}
+
+.vmSelect_labelHide {
+  .vmInput__label {
+    display: none;
+  }
+
+  .vmSelect__btn {
+    top: 8%;
+  }
+}
+
+// Close button
+
+.vmSelect__btn {
+  position: absolute;
+  right: 8px;
+  top: 45%;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  padding: 8px;
+
+  border: none;
+  border-radius: 4px;
+
+  &:focus-visible {
+    outline: 2px solid $color-brand-2;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.vmSelect__btn_clear {
+  right: 48px;
+
+  padding: 10px;
+
+  .vmSelect__btn_icon {
+    width: 20px;
+    height: 20px;
+    fill: $color-gray-1;
+  }
+}
+
+.vmSelect__btn_icon {
+  width: 24px;
+  height: 24px;
+  fill: $color-base-black;
+
+  transition: transform $transition-2;
+}
+
+// Label
+.vmSelect__label {
+  display: block;
+
+  width: 100%;
+
+  margin-bottom: 8px;
+}
+
+// Dropdown
+
+.vmSelect__dropdown {
+  z-index: 2;
+
+  position: absolute;
+
+  visibility: hidden;
+  opacity: 0;
+
+  width: 100%;
+  max-height: 280px;
+
+  background-color: #fff;
+
+  border-radius: 4px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  margin: 0;
+  padding: 12px;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  transition: opacity $transition-3;
+}
+
+// List
+.vmSelect__dropdown_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+// Item
+.vmSelect__dropdown_item {
+  display: block;
+
+  width: 100%;
+
+  text-align: start;
+
+  color: $color-base-black;
+  background-color: $color-base-white;
+
+  padding: 8px 12px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+
+  transition:
+    color $transition-2,
+    background-color $transition-2;
+
+  &:hover {
+    background-color: $color-gray-4;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-brand-2;
+  }
+
+  &_selected {
+    color: $color-base-white;
+    background-color: $color-brand-main;
+
+    &:hover {
+      background-color: $color-brand-1;
+    }
+  }
+}
+
+// Search
+.vmSelect__searchWrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+.vmSelect__dropdown_search {
+  padding: 11px 11px 11px 40px;
+
+  margin-bottom: 4px;
+}
+
+.vmSelect__dropdown_search_icon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translate(0, -50%);
+
+  width: 24px;
+  height: 24px;
+  fill: $color-gray-1;
+}
+
+// notResult
+.vmSelect__dropdown_notResult {
+  color: $color-gray-1;
+  background-color: $color-base-white;
+
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+// vmSelect__item_selected
+.vmSelect__item_selected {
+  color: $color-base-white;
+  background-color: $color-brand-main;
+
+  &:hover {
+    background-color: $color-brand-1;
+  }
+}
+
+// Open
+
+.vmSelect.open {
+  .vmSelect__dropdown {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .vmSelect__btn_icon {
+    transform: rotate(180deg);
+  }
+}
+
+// disabled
+
+.vmSelect.disabled {
+  .vmSelect__btn {
+    cursor: not-allowed;
+  }
+
+  .vmSelect__btn_icon {
+    fill: $color-gray-3;
+  }
+}
+
+.vmSelect__searchIcon {
+  .vmSelect__input {
+    padding: 11px 56px 11px calc(12px + 24px + 8px);
+  }
+}
+
+.vmSelect__search_icon {
+  position: absolute;
+
+  top: 42px;
+  left: 12px;
+
+  width: 24px;
+  height: 24px;
+  fill: $color-gray-1;
+}
+
+// vmSelect_withClear
+.vmSelect_withClear {
+  .vmSelect__input {
+    padding-right: calc(56px + 40px + 8px);
+  }
+}
+
+.vmSelect__btn_clear {
+  .vmSelect__btn_icon {
+    transform: rotate(0) !important;
+  }
+}
+
+// vmSelect_searchOnTop
+.vmSelect_searchOnTop {
+  .vmSelect__searchWrapper {
+    position: sticky;
+    top: 0;
+    padding-top: 12px;
+    background-color: $color-base-white;
+  }
+
+  .vmSelect__dropdown_search_icon {
+    top: 59%;
+  }
+}
+
+.vmSelect_searchOnTop.open {
+  .vmSelect__dropdown {
+    padding-top: 0;
+  }
+}
+
+.vmSelect_labelHide {
+  .vmSelect__search_icon {
+    top: 14px;
+  }
+}

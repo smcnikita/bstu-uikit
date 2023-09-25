@@ -1,0 +1,19 @@
+// Default
+@import './style';
+
+// Variants
+@import './variant/index.scss';
+
+// Disabled
+@import './disabled';
+
+// With icon
+@import './withIcon';
+
+// ЭЦП
+@import './ep';
+
+// Accessibility Theme Contrast
+.accessibility__theme_contrast {
+  @import './accessibility/index';
+}

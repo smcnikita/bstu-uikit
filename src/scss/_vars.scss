@@ -1,0 +1,29 @@
+// $font-family
+$font-family: 'Open Sans', sans-serif;
+
+// transition
+@import './vars/transition.scss';
+
+// shadow
+$shadow-dropdown: 0px 4px 20px rgba(0, 0, 0, 0.08);
+$shadow-tooltip: 0px 1px 4px rgba(0, 0, 0, 0.12);
+
+// media 1280
+$media-max-1280: 1280.98px;
+$media-min-1280: 1281px;
+
+// media 1024
+$media-max-1024: 1024.98px;
+$media-min-1024: 1025px;
+
+// media 768
+$media-max-768: 768.98px;
+$media-min-768: 768px;
+
+// media 480
+$media-max-480: 480.98px;
+$media-min-480: 481px;
+
+// media 360
+$media-max-360: 360.98px;
+$media-min-360: 361.98px;

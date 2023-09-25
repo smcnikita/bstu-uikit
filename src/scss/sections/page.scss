@@ -1,0 +1,7 @@
+.vmPageSection {
+  margin-top: 80px;
+
+  @media (max-width: $media-max-1024) {
+    margin-top: 48px;
+  }
+}

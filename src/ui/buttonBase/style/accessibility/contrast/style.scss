@@ -1,0 +1,17 @@
+.accessibility__theme_contrast {
+  .vmButton_base {
+    color: $color-base-black;
+
+    svg {
+      fill: $color-base-black;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-base-black;
+    }
+
+    &:hover > &_icon {
+      fill: $color-base-black;
+    }
+  }
+}

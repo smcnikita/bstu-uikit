@@ -1,0 +1,21 @@
+.vmTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+
+  border-radius: 4px;
+
+  padding: 4px 8px;
+
+  color: $color-brand-main;
+  background-color: $color-brand-3;
+
+  &_small {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

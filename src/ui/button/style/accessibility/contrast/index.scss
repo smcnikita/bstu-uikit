@@ -1,0 +1,11 @@
+.vmButton {
+  color: $color-base-black;
+
+  svg {
+    fill: $color-base-black;
+  }
+}
+
+.vmButton_icon_tertiary * {
+  fill: $color-base-black;
+}

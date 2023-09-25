@@ -1,0 +1,17 @@
+.vmButton_tertiary {
+  color: $color-brand-main;
+  background-color: transparent;
+
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: $color-brand-3;
+    border: 1px solid $color-brand-3;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: $color-gray-3;
+    border: 1px solid transparent;
+  }
+}

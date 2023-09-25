@@ -1,0 +1,18 @@
+.vmButton_secondary {
+  padding: 11px 23px;
+
+  color: $color-brand-main;
+  background-color: $color-base-white;
+
+  border: 1px solid $color-brand-main;
+
+  &:hover {
+    background-color: $color-brand-3;
+  }
+
+  &:disabled {
+    color: $color-gray-3;
+    background-color: $color-base-white;
+    border: 1px solid $color-gray-4;
+  }
+}

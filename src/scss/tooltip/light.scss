@@ -1,0 +1,31 @@
+.tippy-box[data-theme~='voenmehLight'] {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $color-base-black;
+  background: $color-brand-3;
+
+  padding: 8px 12px;
+
+  box-shadow: $shadow-tooltip;
+}
+
+/*noinspection ALL*/
+.tippy-box[data-theme~='voenmehLight'][data-placement^='top'] > .tippy-arrow:before {
+  border-top-color: $color-brand-3;
+}
+
+/*noinspection ALL*/
+.tippy-box[data-theme~='voenmehLight'][data-placement^='bottom'] > .tippy-arrow:before {
+  border-bottom-color: $color-brand-3;
+}
+
+/*noinspection ALL*/
+.tippy-box[data-theme~='voenmehLight'][data-placement^='left'] > .tippy-arrow:before {
+  border-left-color: $color-brand-3;
+}
+
+/*noinspection ALL*/
+.tippy-box[data-theme~='voenmehLight'][data-placement^='right'] > .tippy-arrow:before {
+  border-right-color: $color-brand-3;
+}

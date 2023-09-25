@@ -1,0 +1,10 @@
+.vmLink_secondary {
+  color: $color-base-black;
+  border-bottom: 1px solid $color-base-black;
+}
+
+// Hover
+.vmLink_secondary:hover {
+  color: $color-base-black;
+  border-bottom: none;
+}

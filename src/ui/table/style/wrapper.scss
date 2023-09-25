@@ -1,0 +1,19 @@
+.vmTable__wrapper {
+  overflow-x: auto;
+
+  .vmTable {
+    @media screen and (max-width: 1023.98px) {
+      width: 1024px;
+    }
+  }
+}
+
+.vmTable__col_small {
+  width: 60px;
+}
+
+.vmTable_w50 {
+  th {
+    width: 50%;
+  }
+}

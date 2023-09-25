@@ -1,0 +1,8 @@
+.vmAlert_error {
+  color: $color-system-error-1;
+  background-color: $color-system-error-3;
+
+  &_icon {
+    fill: $color-system-error-1;
+  }
+}

@@ -1,0 +1,17 @@
+.vmInput:is([type='date']) {
+  height: 48px;
+  -webkit-text-fill-color: $color-base-black;
+  opacity: 1;
+  color: $color-base-black;
+  appearance: none;
+
+  &:focus {
+    border: 1px solid $color-brand-main;
+    outline: none;
+  }
+
+  &:disabled {
+    -webkit-text-fill-color: $color-gray-3;
+    color: $color-gray-3;
+  }
+}

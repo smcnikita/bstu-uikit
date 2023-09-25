@@ -1,0 +1,13 @@
+// Error icon
+.vmInput__message_icon {
+  display: none;
+}
+
+.vmInput__message_error > .vmInput__message_icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: $color-system-error-2;
+  flex-shrink: 0;
+  align-self: flex-start;
+}

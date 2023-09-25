@@ -1,0 +1,10 @@
+.vmLink_primary {
+  color: $color-base-black;
+  border-bottom: 1px solid $color-base-black;
+}
+
+// Hover
+.vmLink_primary:hover {
+  color: $color-base-black;
+  border-bottom: none;
+}
