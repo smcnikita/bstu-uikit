@@ -57,7 +57,7 @@ import { ref, computed } from 'vue';
 import { BaseIcon, CrossIcon, ErrorCircleIcon, PaperclipIcon } from '@/lib';
 
 import type { TStatusVmInput } from '@/ui/input/types';
-import type { ToastPosition } from 'vue3-toastify';
+import type { ToastPosition } from './types';
 
 const props = withDefaults(
   defineProps<{
